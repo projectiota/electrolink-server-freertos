@@ -1,27 +1,29 @@
-## Electrolink Server for RIOT RTOS
+## Electrolink Server for Freertos
 
-`Electrolink RIOT Server` is a [RIOT RTOS](https://www.riot-os.org/) application that is implementing [Electrolink protocol specification](https://github.com/projectiota/electrolink/blob/master/electrolink-protocol.md) file
+`Electrolink RIOT Server` is a [Freertos](http://www.freertos.org/) application that is implementing [Electrolink protocol specification](https://github.com/projectiota/electrolink/blob/master/electrolink-protocol.md) file
+
+It targets [Espressif ESP8266](https://espressif.com/en/products/hardware/esp8266ex/overview) architecture.
 
 ## Usage
-Clone [RIOT RTOS](https://github.com/RIOT-OS/RIOT):
+Clone [esp-open-rtos](https://github.com/SuperHouse/esp-open-rtos):
 ```
-git clone https://github.com/RIOT-OS/RIOT
+git clone https://github.com/SuperHouse/esp-open-rtos
 ```
 
-Clone Electrolink RIOT server app next to RIOT RTOS dir:
+Clone Electrolink Freertos server app next to `esp-open-rtos` dir:
 ```
-git clone https://github.com/projectiota/electrolink-server-riot
+git clone https://github.com/projectiota/electrolink-server-freertos
 ```
 
 Build:
 ```
-cd electrolink-server-riot
+cd electrolink-server-freertos
 make
 ```
 
 Execute:
 ```
-./bin/native/electrolink-server-riot.elf 
+make flash
 ```
 
 ## License
